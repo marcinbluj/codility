@@ -13,13 +13,12 @@ public class StoneWall {
         Set<Integer> set = new HashSet<>();
 
         Set<Integer> higherValues;
-        for (int i = 0; i < H.length; i++) {
-            int currentHeight = H[i];
+        for (int currentHeight : H) {
             higherValues = set.stream().filter(h -> h > currentHeight).collect(Collectors.toSet());
             counter += higherValues.size();
             set.removeAll(higherValues);
 
-            set.add(H[i]);
+            set.add(currentHeight);
         }
         counter += set.size();
         return counter;
