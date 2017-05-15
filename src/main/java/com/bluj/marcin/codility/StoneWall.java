@@ -30,12 +30,12 @@ public class StoneWall {
         int counter = 0;
         TreeSet<Integer> set = new TreeSet<>();
 
-        for (int i = 0; i < H.length; i++) {
-            while (!set.isEmpty() && H[i] < set.last()) {
+        for (int i : H) {
+            while (!set.isEmpty() && i < set.last()) {
                 set.pollLast();
                 counter++;
             }
-            set.add(H[i]);
+            set.add(i);
         }
         counter += set.size();
         return counter;
