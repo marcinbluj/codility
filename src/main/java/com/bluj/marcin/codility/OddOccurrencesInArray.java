@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Created by MSI on 14.05.2017.
  */
 public class OddOccurrencesInArray {
-    public int solution(int[] A) {
+    public int solution(int[] A) { //100%
         // write your code in Java SE 8
         Arrays.sort(A);
         int length = A.length;

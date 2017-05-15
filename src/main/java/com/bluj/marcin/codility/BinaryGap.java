@@ -4,7 +4,7 @@ package com.bluj.marcin.codility;
  * Created by MSI on 14.05.2017.
  */
 public class BinaryGap {
-    public int solution(int N) {
+    public int solution(int N) { //100%
         // write your code in Java SE 8
         String binaryN = Integer.toBinaryString(N);
         int counter = 0;
@@ -24,7 +24,7 @@ public class BinaryGap {
         return maxGap;
     }
 
-    public int solution2(int N) {
+    public int solution2(int N) { //100%
         // write your code in Java SE 8
         String binaryN = Integer.toBinaryString(N);
         int maxGap = 0;

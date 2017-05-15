@@ -6,7 +6,7 @@ import java.util.Collections;
  * Created by MSI on 14.05.2017.
  */
 public class CyclicRotation {
-    public int[] solution(int[] A, int K) {
+    public int[] solution(int[] A, int K) { //100%
         // write your code in Java SE 8
         int length = A.length;
         if (length <= 1 || K % length == 0) {
@@ -22,7 +22,7 @@ public class CyclicRotation {
         return result;
     }
 
-    public int[] solution2(int[] A, int K) {
+    public int[] solution2(int[] A, int K) { //100%
         // write your code in Java SE 8
         int length = A.length;
         if (length <= 1 || K % length == 0) {

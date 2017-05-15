@@ -8,7 +8,7 @@ import java.util.Stack;
  * Created by MSI on 15.05.2017.
  */
 public class Brackets {
-    public int solution(String S) {
+    public int solution(String S) { //100%
         // write your code in Java SE 8
         if (S.isEmpty()) {
             return 1;
