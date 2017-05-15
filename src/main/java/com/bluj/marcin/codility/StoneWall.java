@@ -1,7 +1,6 @@
 package com.bluj.marcin.codility;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -26,8 +25,19 @@ public class StoneWall {
         return counter;
     }
 
-    public int solution2(int[] H) {
+    public int solution2(int[] H) { //100% :)
         // write your code in Java SE 8
-        return 0;
+        int counter = 0;
+        TreeSet<Integer> set = new TreeSet<>();
+
+        for (int i = 0; i < H.length; i++) {
+            while (!set.isEmpty() && H[i] < set.last()) {
+                set.pollLast();
+                counter++;
+            }
+            set.add(H[i]);
+        }
+        counter += set.size();
+        return counter;
     }
 }
